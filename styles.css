@@ -3,11 +3,44 @@
     padding: 0px;
     margin: 0px;
   }
-  
+
+  /* anchor tag inherit color of parent container */ 
+  a {
+    color: inherit;
+  }
+
   /* establish background/font color */
   body {
     background-color: black;
     color: white;
+  }
+
+  p {
+    font-family: 'Orbitron', sans-serif;
+    line-height: 2em;
+  }
+
+  /* establish fixed navbar */
+  .navbar-alignment {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 5em;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .navbar-list {
+    display: flex;
+  }
+
+  .navbar-list > * {
+    list-style: none;
+    padding-right: 3em;
+    font-family: 'Megrim', 'cursive';
+    font-size: 2em;
   }
   
   /* style header */
@@ -25,7 +58,9 @@
     font-family: 'Megrim', 'cursive';
     text-align: center;
     font-size: 3em;
-    padding: 0px;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
   }
   
 
@@ -37,6 +72,7 @@
     margin: 0 auto;
   }
   
+  /* default styling for main, establish horizontal line above main */
   main {
     width: 80%;
     margin: 0 auto;
@@ -75,6 +111,9 @@
     }
   }
 
+  .text-dec-none {
+    text-decoration: none;
+  }
 
   /*
   @media screen and (max-width: 600px) {
