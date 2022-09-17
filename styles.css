@@ -1,0 +1,93 @@
+/* remove margins and padding from entire html container */
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /* establish background/font color */
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  /* style header */
+  .header-title {
+    color: white;
+    font-family: 'Megrim', 'cursive';
+    text-align: center;
+    font-size: 8em;
+    padding: 20px;
+  }
+
+  /* style subheaders */
+  .subheaders {
+    color: white;
+    font-family: 'Megrim', 'cursive';
+    text-align: center;
+    font-size: 3em;
+    padding: 0px;
+  }
+  
+
+  /* style all image tags */
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  main {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+    padding: 5%;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8em;
+  }
+
+  .about-img {
+    width: 50%;
+  }
+  
+  .header-figure {
+    background: black;
+    margin: 0;
+    animation-name: fade-in;
+    animation-duration: 7s;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /*
+  @media screen and (max-width: 600px) {
+    #title {
+      font-size: 2em;
+    }
+    #example {
+      width: 100%;
+    }
+    #img-div2 {
+      width: 100%;
+    }
+  }
+  */
+  
+  
