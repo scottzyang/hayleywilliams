@@ -72,6 +72,21 @@
     text-decoration-thickness: 1px;
   }
   
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .contact-list > * {
+    list-style: none;
+    padding: 0 3em 5em 0;
+  }
+  
+  .contact-website {
+    font-size: 1.5em;
+  }
 
   /* style all image tags */
   img {
@@ -115,6 +130,10 @@
 
   .text-dec-none {
     text-decoration: none;
+  }
+
+  .fa {
+    font-size: 2.5em;
   }
 
   /*
