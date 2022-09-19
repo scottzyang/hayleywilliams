@@ -29,6 +29,12 @@
       padding: 5%;
     }
 
+  figcaption {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+  }
+
   /* establish a fixed navbar */
   .navbar-alignment {
     display: flex;
@@ -47,7 +53,7 @@
 
   .navbar-list > * {
     list-style: none;
-    padding-right: 3em;
+    padding: 0 1.5em;
     font-family: 'Megrim', 'cursive';
     font-size: 2em;
   }
@@ -71,7 +77,46 @@
     text-decoration: underline;
     text-decoration-thickness: 1px;
   }
+
+  .discography {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+    grid-template-areas: "a r b"
+                         "p af pe";
+  }
+
+  .all-we-know {
+    grid-area: a;
+    list-style: none;
+  }
+
+  .riot {
+    grid-area: r;
+    list-style: none;
+  }
+
+  .brand-new {
+    grid-area: b;
+    list-style: none;
+  }
+
+  .paramore {
+    grid-area: p;
+    list-style: none;
+  }
   
+  .after-laughter {
+    grid-area: af;
+    list-style: none;
+  }
+
+  .petals {
+    grid-area: pe;
+    list-style: none;
+  }
+
   .contact-list {
     display: flex;
     flex-direction: row;
@@ -81,11 +126,12 @@
 
   .contact-list > * {
     list-style: none;
-    padding: 0 3em 5em 0;
   }
   
-  .contact-website {
-    font-size: 1.5em;
+  .list-icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* style all image tags */
@@ -132,9 +178,26 @@
     text-decoration: none;
   }
 
-  .fa {
-    font-size: 2.5em;
+  .list-icon  {
+    width: 10em;
+    display: flex;
+    justify-content: center;
   }
+
+  .list-icon i {
+    font-size: 2em;
+  }
+
+  .icon-text {
+    font-size: 20px; 
+  }
+
+  .anchor {
+    display: block;
+    position: relative;
+    top: -5em;
+    visibility: hidden;
+}
 
   /*
   @media screen and (max-width: 600px) {
