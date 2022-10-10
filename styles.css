@@ -2,219 +2,221 @@
 * {
     padding: 0px;
     margin: 0px;
-  }
-
-  /* anchor tag inherit color of parent container */ 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  /* establish background/font color */
-  body {
-    background-color: black;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-  }
-
-  p {
-    line-height: 2em;
-  }
-
-  /* default styling for main, establish horizontal line above main */
-  main {
-    width: 80%;
-    margin: 0 auto;
-    border-top: 1px solid #eee;
-    padding: 5%;
-  }
-
-  footer {
-    padding-bottom: 4em;
-  }
-
-  figcaption {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-  }
-
-  /* establish a fixed navbar */
-  .navbar-alignment {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    width: 100vw;
-    height: 5em;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-  }
-
-  .navbar-list {
-    display: flex;
-  }
-
-  .navbar-list > * {
-    list-style: none;
-    padding: 0 1.5em;
-    font-family: 'Megrim', 'cursive';
-    font-size: 2em;
-  }
-  
-  /* style header */
-  .header-title {
-    color: white;
-    font-family: 'Megrim', 'cursive';
-    text-align: center;
-    font-size: 8em;
-    padding: 20px;
-  }
-
-  /* style subheaders */
-  .subheaders {
-    color: white;
-    font-family: 'Megrim', 'cursive';
-    text-align: center;
-    font-size: 3em;
-    padding: 1em 0;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-  }
-
-  .discography {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 5%;
-    grid-template-areas: "a r b"
-                         "p af pe";
-  }
-
-  .all-we-know {
-    grid-area: a;
-    list-style: none;
-  }
-
-  .riot {
-    grid-area: r;
-    list-style: none;
-  }
-
-  .brand-new {
-    grid-area: b;
-    list-style: none;
-  }
-
-  .paramore {
-    grid-area: p;
-    list-style: none;
-  }
-  
-  .after-laughter {
-    grid-area: af;
-    list-style: none;
-  }
-
-  .petals {
-    grid-area: pe;
-    list-style: none;
-  }
-
-  .contact-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
-
-  .contact-list > * {
-    list-style: none;
-  }
-  
-  .list-icon a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* style all image tags */
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  .about {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    margin-right: 8em;
-    width: 50%;
-  }
-
-  .about-img {
-    width: 50%;
-  }
-  
-  .header-figure {
-    background: black;
-    margin: 0;
-    animation-name: fade-in;
-    animation-duration: 7s;
-  }
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .text-dec-none {
-    text-decoration: none;
-  }
-
-  .list-icon  {
-    width: 10em;
-    display: flex;
-    justify-content: center;
-  }
-
-  .list-icon i {
-    font-size: 2em;
-  }
-
-  .icon-text {
-    font-size: 20px; 
-  }
-
-  .anchor {
-    display: block;
-    position: relative;
-    top: -5em;
-    visibility: hidden;
 }
 
-  /*
-  @media screen and (max-width: 600px) {
-    #title {
-      font-size: 2em;
-    }
-    #example {
-      width: 100%;
-    }
-    #img-div2 {
-      width: 100%;
-    }
+/* anchor tag inherit color of parent container */ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* establish background/font color */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+p {
+  line-height: 2em;
+  font-size: 1.5vw;
+}
+
+/* default styling for main, establish horizontal line above main */
+main {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+  padding: 5%;
+}
+
+footer {
+  padding-bottom: 4em;
+}
+
+figcaption {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+/* establish a fixed navbar */
+.navbar-alignment {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100vw;
+  height: 5em;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar-list {
+  display: flex;
+}
+
+.navbar-list > * {
+  list-style: none;
+  padding: 0 1.5em;
+  font-family: 'Megrim', 'cursive';
+  font-size: 3vw;
+}
+
+/* style header */
+.header-title {
+  color: white;
+  font-family: 'Megrim', 'cursive';
+  text-align: center;
+  font-size: 10vw;
+  padding: 20px;
+}
+
+/* style subheaders */
+.subheaders {
+  color: white;
+  font-family: 'Megrim', 'cursive';
+  text-align: center;
+  font-size: 4vw;
+  padding: 1em 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.discography {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5%;
+  grid-template-areas: "a r b"
+                        "p af pe";
+}
+
+.all-we-know {
+  grid-area: a;
+  list-style: none;
+}
+
+.riot {
+  grid-area: r;
+  list-style: none;
+}
+
+.brand-new {
+  grid-area: b;
+  list-style: none;
+}
+
+.paramore {
+  grid-area: p;
+  list-style: none;
+}
+
+.after-laughter {
+  grid-area: af;
+  list-style: none;
+}
+
+.petals {
+  grid-area: pe;
+  list-style: none;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.contact-list > * {
+  list-style: none;
+}
+
+.list-icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* style all image tags */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8em;
+  width: 50%;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.header-figure {
+  background: black;
+  margin: 0;
+  animation-name: fade-in;
+  animation-duration: 7s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  */
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+.list-icon  {
+  width: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+.list-icon i {
+  font-size: 2vw;
+}
+
+.icon-text {
+  font-size: 1.5vw; 
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -5em;
+  visibility: hidden;
+}
+
+/*
+@media screen and (max-width: 600px) {
+  #title {
+    font-size: 2em;
+  }
+  #example {
+    width: 100%;
+  }
+  #img-div2 {
+    width: 100%;
+  }
+}
+*/
+
   
