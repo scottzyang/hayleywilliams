@@ -41,12 +41,12 @@ figcaption {
 }
 
 /* establish a fixed navbar */
-.navbar-alignment {
-  display: flex;
-  justify-content: center;
-  background-color: black;
+.navbar-styling {
+  /* display: flex;
+  justify-content: center;*/
+  background-color: black !important;
   width: 100vw;
-  height: 5em;
+  /* height: 5em;*/
   align-items: center;
   position: fixed;
   z-index: 1;
@@ -156,7 +156,6 @@ img {
 .about-text {
   display: flex;
   flex-direction: column;
-  margin-right: 8em;
   width: 50%;
 }
 
@@ -205,18 +204,28 @@ img {
   visibility: hidden;
 }
 
-/*
-@media screen and (max-width: 600px) {
-  #title {
-    font-size: 2em;
-  }
-  #example {
-    width: 100%;
-  }
-  #img-div2 {
-    width: 100%;
+
+@media screen and (min-width: 576px) {
+  .navbar-alignment {
+    justify-content: center;
+    width: 100vw;
   }
 }
-*/
+
+@media screen and (max-width: 700px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .discography {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
   
