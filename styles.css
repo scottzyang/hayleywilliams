@@ -4,6 +4,10 @@
     margin: 0px;
 }
 
+ol, ul {
+  padding: 0;
+}
+
 /* anchor tag inherit color of parent container */ 
 a {
   color: inherit;
@@ -212,11 +216,26 @@ img {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .discography {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+    grid-template-areas: "a r"
+                         "b p"
+                         "af pe";
+  }
+}
+
 @media screen and (max-width: 700px) {
   .about {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .about-text {
+    width: 85%;
   }
 }
 
